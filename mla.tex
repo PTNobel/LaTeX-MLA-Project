@@ -2,12 +2,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[american]{babel}
 \usepackage{csquotes}
+\usepackage{ifpdf}
 \usepackage{mla}
 \usepackage{datetime2}
 
 \usepackage[style=mla, backend=biber]{biblatex}
 \defbibheading{bibliography}{\newpage\centering Works Cited}
 \addbibresource{main.bib}
+\setlength{\bibhang}{0.5in}
 
 % Using \mycite[]{} over \autocite[]{} will prevent biblatex-mla from ever
 % shortening your citation. My teachers have all required this.
