@@ -11,9 +11,9 @@
 \addbibresource{main.bib}
 \setlength{\bibhang}{0.5in}
 
-% Using \mycite[]{} over \autocite[]{} will prevent biblatex-mla from ever
+% Using \mlacite[]{} over \autocite[]{} will prevent biblatex-mla from ever
 % shortening your citation. My teachers have all required this.
-\newcommand{\mycite}[2][]{\mancite\autocite[#1]{#2}}
+\newcommand{\mlacite}[2][]{\mancite\autocite[#1]{#2}}
 
 \DTMnewdatestyle{MLAdate}{%
   \renewcommand*{\DTMdisplaydate}[4]{\DTMenglishordinal{##3} %
@@ -24,7 +24,7 @@
 \begin{document}
 \begin{mla}{First}{Last}{That Super Cool Professor}{This Humanities Class}%
   {\today}{Name of This Paper}
-  \autocite{SomeWebsite} \mycite[12]{SomeBook}
+  \autocite{SomeWebsite} \mlacite[12]{SomeBook}
 
   \printbibliography
 \end{mla}
